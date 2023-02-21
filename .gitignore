@@ -1,0 +1,5 @@
+*.log
+aiogram_bot/.env
+__pycache__
+.venv
+django_bot/config.py
