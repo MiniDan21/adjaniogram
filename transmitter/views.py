@@ -20,4 +20,5 @@ async def update(request: HttpRequest):
         # обращение к родительскому роуту - диспетчеру
         dispatcher = update_router._parent_router
         await dispatcher.feed_update(bot=bot, update=update)
-    return JsonResponse({"status": "OK"}, status=200)
+        return JsonResponse({"status": "OK"}, status=200)
+    return JsonResponse({"status": "I`m a teapot"}, status=418)
